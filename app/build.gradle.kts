@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -93,4 +94,9 @@ dependencies {
 
     //QR generator
     implementation("com.google.zxing:core:3.5.1")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+
 }
